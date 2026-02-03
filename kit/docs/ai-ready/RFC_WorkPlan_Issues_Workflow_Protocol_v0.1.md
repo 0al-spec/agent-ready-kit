@@ -107,7 +107,7 @@ Issue допускает живую дискуссию, но любые изме
 
 Лейблы используются как сигнал control plane и для маршрутизации.
 
-Для задач: `ai-ready`, `needs-human`, `blocked`, `ai-claimed`.  
+Для задач: `agent-ready`, `needs-human`, `blocked`, `ai-claimed`.  
 Для PR: `tests-change`, `deps-change`, `api-change`, `format-change`, `spec-change`, `judge-change`.  
 Для исключений: `perf-accepted`, `execution-log`.
 

@@ -1,4 +1,4 @@
-# AI-Ready Planning Backends and Profiles (Consolidated Draft v0.1, EN)
+# Agent-Ready Planning Backends and Profiles (Consolidated Draft v0.1, EN)
 
 **Repository:** This kit (and any repository adopting this spec)
 **Status:** Draft

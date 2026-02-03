@@ -82,7 +82,7 @@ Planning Profile описывает “как мы планируем здесь
 - `profile_name`: `light|standard|strict` (или своё имя)
 - `definition_of_ready`: требования к задаче для статуса `ready`
 - `definition_of_done`: требования к завершению (обычно merge + обновления)
-- `ai_ready_criteria`: критерии для `ai-ready` (если используется)
+- `ai_ready_criteria`: критерии для `agent-ready` (если используется)
 - `task_types`: список типов задач (feature/bug/refactor/docs/perf/research…)
 - `risk_tags`: список риск-тегов (needs-human, api-change, security-sensitive…)
 

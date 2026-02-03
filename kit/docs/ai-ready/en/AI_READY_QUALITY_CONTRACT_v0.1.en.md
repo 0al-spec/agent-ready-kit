@@ -1,4 +1,4 @@
-# AI-Ready Contribution Quality Contract (Consolidated Draft v0.1, EN)
+# Agent-Ready Contribution Quality Contract (Consolidated Draft v0.1, EN)
 
 **Repository:** This kit (and any repository adopting this contract)
 **Status:** Draft
@@ -178,7 +178,7 @@ Implementation PRs MUST include:
 
 ## 9. Recommended Labels (Minimum Set)
 
-- Task/flow: `ai-ready`, `needs-human`, `blocked`, `ai-claimed`
+- Task/flow: `agent-ready`, `needs-human`, `blocked`, `ai-claimed`
 - PR type: `spec-change`, `judge-change`
 - Change flags: `tests-change`, `deps-change`, `api-change`, `format-change`
 - Exceptions: `perf-accepted`, `execution-log`

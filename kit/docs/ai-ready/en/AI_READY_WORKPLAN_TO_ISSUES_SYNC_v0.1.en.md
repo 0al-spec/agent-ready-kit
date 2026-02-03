@@ -1,4 +1,4 @@
-# AI-Ready WorkPlan -> GitHub Issues Sync (Consolidated Draft v0.1, EN)
+# Agent-Ready WorkPlan -> GitHub Issues Sync (Consolidated Draft v0.1, EN)
 
 **Repository:** This kit (and any repository adopting this spec)
 **Status:** Draft
@@ -136,15 +136,15 @@ Recommended practice: keep a "Manual Notes" section below the managed block.
 ## 7. State -> Label Mapping (Recommended)
 
 - `draft` -> `needs-human` (or none, repo choice)
-- `ready` -> no special labels; if AI-ready criteria met, add `ai-ready`
+- `ready` -> no special labels; if agent-ready criteria met, add `agent-ready`
 - `blocked` -> `blocked`
 - `done` -> close issue and/or label `done`
 
 ---
 
-## 8. AI-Ready Criteria (when a task can be autonomous)
+## 8. Agent-Ready Criteria (when a task can be autonomous)
 
-A task gets `ai-ready` only if all conditions are true:
+A task gets `agent-ready` only if all conditions are true:
 
 1. `task_id` and `title` exist
 2. `state = ready`

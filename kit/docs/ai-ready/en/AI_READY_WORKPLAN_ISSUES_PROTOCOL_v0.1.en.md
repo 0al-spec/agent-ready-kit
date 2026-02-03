@@ -1,4 +1,4 @@
-# AI-Ready WorkPlan <-> Issues Workflow Protocol (Consolidated Draft v0.1, EN)
+# Agent-Ready WorkPlan <-> Issues Workflow Protocol (Consolidated Draft v0.1, EN)
 
 **Repository:** This kit (and any repository adopting this protocol)
 **Status:** Draft
@@ -107,7 +107,7 @@ Managed sections are defined by the sync spec (`AI_READY_WORKPLAN_TO_ISSUES_SYNC
 
 ## 9. Labels (Minimum Set)
 
-- Task/flow: `ai-ready`, `needs-human`, `blocked`, `ai-claimed`
+- Task/flow: `agent-ready`, `needs-human`, `blocked`, `ai-claimed`
 - PR type: `spec-change`, `judge-change`
 - Change flags: `tests-change`, `deps-change`, `api-change`, `format-change`
 - Exceptions: `perf-accepted`, `execution-log`
