@@ -1,0 +1,25 @@
+# Markdownlint rules
+# https://github.com/DavidAnson/markdownlint
+
+default: true
+
+# Allow long lines (URLs and spec text)
+MD013: false
+
+# Allow inline HTML (used for markers and comments)
+MD033: false
+
+# Allow two trailing spaces for hard line breaks (common in specs)
+MD009:
+  br_spaces: 2
+  strict: false
+
+# Keep current doc style (no enforced blank lines)
+MD022: false
+MD032: false
+
+# Allow fenced blocks without language in existing specs
+MD040: false
+
+# Allow multiple blank lines in existing specs
+MD012: false

@@ -1,0 +1,10 @@
+# markdownlint-cli2 config
+# Uses .markdownlint.yaml for rules
+
+globs:
+  - "**/*.md"
+
+ignores:
+  - "**/node_modules/**"
+  - ".git/**"
+  - "**/dist/**"
