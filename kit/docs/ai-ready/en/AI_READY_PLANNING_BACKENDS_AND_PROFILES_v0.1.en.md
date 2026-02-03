@@ -59,7 +59,7 @@ All backends MUST be able to represent the following fields.
 - `acceptance[]`: acceptance criteria
 - `dod[]`: definition of done
 - `tags[]`: capability or risk tags
-- `owner_hint`: e.g. `needs-human`, `maintainer-only`
+- `owner_hint`: e.g. `needs-maintainer`, `maintainer-only`
 - `notes`: short context
 
 ### 4.3 Extensions

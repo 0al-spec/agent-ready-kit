@@ -59,7 +59,7 @@
 - `acceptance[]` — acceptance criteria
 - `dod[]` — definition of done
 - `tags[]` — теги возможностей/рисков
-- `owner_hint` — например `needs-human`, `maintainer-only`
+- `owner_hint` — например `needs-maintainer`, `maintainer-only`
 - `notes` — краткие пояснения
 
 ### 4.3. Расширения
@@ -84,7 +84,7 @@ Planning Profile описывает “как мы планируем здесь
 - `definition_of_done`: требования к завершению (обычно merge + обновления)
 - `ai_ready_criteria`: критерии для `agent-ready` (если используется)
 - `task_types`: список типов задач (feature/bug/refactor/docs/perf/research…)
-- `risk_tags`: список риск-тегов (needs-human, api-change, security-sensitive…)
+- `risk_tags`: список риск-тегов (needs-maintainer, api-change, security-sensitive…)
 
 ### 5.2. Рекомендация по профилям
 

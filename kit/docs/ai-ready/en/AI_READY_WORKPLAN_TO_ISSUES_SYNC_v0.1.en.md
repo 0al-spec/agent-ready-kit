@@ -74,7 +74,7 @@ Each task extracted from WorkPlan MUST have:
 - `constraints[]`
 - `tags[]`
 - `notes`
-- `owner_hint`: e.g. `needs-human`
+- `owner_hint`: e.g. `needs-maintainer`
 
 ### 4.3 Parsing Rules
 
@@ -135,7 +135,7 @@ Recommended practice: keep a "Manual Notes" section below the managed block.
 
 ## 7. State -> Label Mapping (Recommended)
 
-- `draft` -> `needs-human` (or none, repo choice)
+- `draft` -> `needs-maintainer` (or none, repo choice)
 - `ready` -> no special labels; if agent-ready criteria met, add `agent-ready`
 - `blocked` -> `blocked`
 - `done` -> close issue and/or label `done`
@@ -150,7 +150,7 @@ A task gets `agent-ready` only if all conditions are true:
 2. `state = ready`
 3. At least one of: acceptance, DoD, or PRD link
 4. No blocking deps (all deps are `done` or absent)
-5. No `owner_hint = needs-human` and no `unsafe` tag
+5. No `owner_hint = needs-maintainer` and no `unsafe` tag
 6. Verification commands/links exist
 
 ---

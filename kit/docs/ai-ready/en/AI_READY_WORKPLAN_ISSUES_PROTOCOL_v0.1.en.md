@@ -49,7 +49,7 @@ Sync is **one-way for requirements** and **two-way for operational facts**.
 - **Maintainers**: final merge authority.
 - **Product Owner (PO)**: owns SoT.
 - **Infra Owner (IO)**: owns Judge Surface.
-- **Contributors**: humans or agent-runners.
+- **Contributors**: direct authors and/or agent-runners.
 
 In small projects, PO = IO = Maintainer.
 
@@ -107,7 +107,7 @@ Managed sections are defined by the sync spec (`AI_READY_WORKPLAN_TO_ISSUES_SYNC
 
 ## 9. Labels (Minimum Set)
 
-- Task/flow: `agent-ready`, `needs-human`, `blocked`, `ai-claimed`
+- Task/flow: `agent-ready`, `needs-maintainer`, `blocked`, `ai-claimed`
 - PR type: `spec-change`, `judge-change`
 - Change flags: `tests-change`, `deps-change`, `api-change`, `format-change`
 - Exceptions: `perf-accepted`, `execution-log`
@@ -128,7 +128,7 @@ Claims do not modify requirements.
 
 ## 11. PR Opening and Feedback Loop
 
-PRs are the primary feedback channel for agents and humans.
+PRs are the primary feedback channel for agents and reviewers.
 
 - PR title and body include `TASK_ID` and WorkPlan link.
 - PR body includes **Verification** and other template sections.

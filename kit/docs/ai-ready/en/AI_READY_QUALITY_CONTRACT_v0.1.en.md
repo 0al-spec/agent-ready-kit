@@ -2,14 +2,14 @@
 
 **Repository:** This kit (and any repository adopting this contract)
 **Status:** Draft
-**Audience:** maintainers, reviewers, contributors (humans and agent-runners)
+**Audience:** maintainers, reviewers, contributors, agent-runners
 **Goal:** reproducible, safe, and auditable PRs at scale, including autonomous agents.
 
 ---
 
 ## 1. Intent
 
-We want any contributor (human or agent-runner) to:
+We want any contributor or agent-runner to:
 
 1. select a task from the repository WorkPlan,
 2. prepare a PR that **objectively** passes quality gates,
@@ -57,7 +57,7 @@ Code, tests, docs, examples, and other artifacts that implement tasks, e.g.
 - **Maintainers**: repository owners and final merge authority.
 - **Product Owner (PO)**: owner of SoT (WorkPlan/requirements).
 - **Infra Owner (IO)**: owner of Judge Surface.
-- **Contributor**: PR author (human) and/or agent-runner.
+- **Contributor**: PR author and/or agent-runner.
 
 In small projects, PO = IO = Maintainer.
 
@@ -133,8 +133,8 @@ In small projects, PO = IO = Maintainer.
 - PR body includes **Dependency Rationale** section.
 - Optional: license/security check.
 
-### Gate 9 - Danger Zones Require Human
-**Rule:** Public API or format changes require human review.
+### Gate 9 - Danger Zones Require Maintainer Review
+**Rule:** Public API or format changes require maintainer review.
 
 **Requirements:**
 - Label `api-change` or `format-change`.
@@ -178,7 +178,7 @@ Implementation PRs MUST include:
 
 ## 9. Recommended Labels (Minimum Set)
 
-- Task/flow: `agent-ready`, `needs-human`, `blocked`, `ai-claimed`
+- Task/flow: `agent-ready`, `needs-maintainer`, `blocked`, `ai-claimed`
 - PR type: `spec-change`, `judge-change`
 - Change flags: `tests-change`, `deps-change`, `api-change`, `format-change`
 - Exceptions: `perf-accepted`, `execution-log`
