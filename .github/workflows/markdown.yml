@@ -1,0 +1,32 @@
+name: Markdown
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".markdownlint.yaml"
+      - ".markdownlint-cli2.yaml"
+      - "Makefile"
+  push:
+    branches:
+      - "main"
+    paths:
+      - "**/*.md"
+      - ".markdownlint.yaml"
+      - ".markdownlint-cli2.yaml"
+      - "Makefile"
+
+jobs:
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Markdown lint
+        run: make md-check
