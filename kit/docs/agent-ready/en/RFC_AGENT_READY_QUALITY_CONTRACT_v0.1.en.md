@@ -187,11 +187,11 @@ Implementation PRs MUST include:
 
 This repository adopts the following **exact** conventions for PRs:
 
-**PR title format**
+### PR title format
 
 - `[<TASK_ID>] <short summary>`
 
-**Required labels**
+### Required labels
 
 - Always: `agent-ready`
 - If changing Source of Truth (WorkPlan/requirements): `spec-change`
@@ -201,7 +201,7 @@ This repository adopts the following **exact** conventions for PRs:
 - If API/format changes: `api-change` or `format-change`
 - If accepting perf regression: `perf-accepted`
 
-**Required checks**
+### Required checks
 
 - **Markdown** (GitHub Actions workflow): runs `make md-check` on PRs that touch `**/*.md`,
   `.markdownlint.yaml`, `.markdownlint-cli2.yaml`, or `Makefile`.
