@@ -134,6 +134,22 @@ PRs are the primary feedback channel for agents and reviewers.
 - PR body includes **Verification** and other template sections.
 - The contributor iterates until required checks are green and reviews are resolved.
 
+### 11.1 Authoritative Execution Status (Draft PR Lifecycle)
+
+Operational statuses in Issues or planning backends MAY exist, but they are advisory only.
+The authoritative execution state is defined exclusively by the PR lifecycle:
+
+- **No PR** → **not in progress**
+- **Draft PR** → **in progress**
+- **Ready PR** → **in review**
+- **Merged PR** → **done**
+
+**Rules:**
+
+- Draft PRs are the minimal, provable signal of work in progress (code + branch + history).
+- Agents/contributors SHOULD open a Draft PR as soon as the first commit exists, even if the work is incomplete or CI is not yet passing.
+- Issue/WorkPlan status SHOULD NOT override the PR lifecycle; when they conflict, trust the PR.
+
 ---
 
 ## 12. Closure and Archiving

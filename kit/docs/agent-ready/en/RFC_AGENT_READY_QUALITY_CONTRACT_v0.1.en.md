@@ -183,6 +183,29 @@ Implementation PRs MUST include:
 - Change flags: `tests-change`, `deps-change`, `api-change`, `format-change`
 - Exceptions: `perf-accepted`, `execution-log`
 
+## 9.1 Repository Contract (Exact)
+
+Each adopting repository SHOULD declare an **exact** PR contract, including title format,
+required labels, and required checks. A recommended baseline is:
+
+**PR title format**
+
+- `[<TASK_ID>] <short summary>`
+
+**Required labels**
+
+- Always: `agent-ready`
+- If changing Source of Truth (WorkPlan/requirements): `spec-change`
+- If changing Judge Surface (CI/workflows/policy): `judge-change`
+- If tests change: `tests-change`
+- If dependencies change: `deps-change`
+- If API/format changes: `api-change` or `format-change`
+- If accepting perf regression: `perf-accepted`
+
+**Required checks**
+
+- Repositories MUST list the exact required checks and what they execute.
+
 ---
 
 ## 10. Document Map
